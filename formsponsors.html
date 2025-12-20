@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Pikate</title>
+  <style>
+    /* Mini estilos para la galería */
+    .pet-item { margin-bottom: 14px; }
+    .pet-header { margin-bottom: 6px; }
+    .pet-photos { display: flex; gap: 8px; flex-wrap: wrap; margin: 6px 0 0 0; padding: 0; }
+    .pet-photos img { width: 96px; height: 96px; object-fit: cover; border-radius: 6px; border: 1px solid #ddd; }
+    .pet-actions button { margin-left: 8px; }
+    .muted { color: #666; font-size: 0.9em; }
+  </style>
+</head>
+  <div class="main_content">
+        
+           <header>
+            <div class="header_contenido">
+                <div class="logo">MiLogo</div>
+                <!--MENÚ HAMBURGUESA-->
+                <nav id="menú_nav">
+                    <!--CHECKBOX DE CONTROL-->
+                    <label for="hamburguesa">&#9776;</label>
+                    <input type="checkbox" id="hamburguesa">
+                    <!--DESPLEGABLE-->
+                    <div id="menú_items">
+                        <a href="index.html">Inicio</a>
+                        <a href="user.html">Píkate</a>
+                        <a href="pikate.html">Los pikados</a>
+                        <a href="pikateclub.html">Clubes</a>
+                        <a href="pikatesponsors.html">Marcas</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+</div>
+<body>
+  <div class="main_content">
+    <div class="header">
+      <div class="header_contenido">
+        <div class="logo">
+          <span class="logo_header">
+            <a class="link_logo_header" href="" target="_blank"><img src=""></a>
+          </span>
+        </div>
+        <div class="nav_container">
+          <span href="" class="nav_item">Alta perfil</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main_container" id="main_content">
+    <div class="title">Empresas/Sponsors</div>
+    <div class="formulario">
+      <form id="alta_profile">
+        <div class="input_container">
+          <label>Nombre</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Como te llamas..." autocomplete="off">
+        </div>
+        <div class="input_container">
+          <label>NIF</label>
+          <input type="text" name="nif" id="nif" placeholder="Como te apellidas..." autocomplete="off">
+        </div>
+        <div class="input_container">
+          <label>Página web oficial</label>
+          <input type="text" name="web" id="web" autocomplete="off">
+        </div>
+        <div class="input_container">
+          <label>Dirección</label>
+           <input type="text" id="direccion" name="direccion">
+        </div>
+        <div class="input_container">
+          <label>Localidad</label>
+          <input type="text" name="localidad" id="localidad">
+          </div>
+        <div class="input_container">
+          <label>Provincia</label>
+          <input type="text" name="provincia" id="provincia" placeholder="Badajoz" autocomplete="off">
+        </div>
+        <div class="input_container">
+          <label>Telf. de contacto</label>
+         <input type="text" name="telefono" id="telefono" autocomplete="off">
+        </div>
+        <div class="input_container">
+          <label>Correo Electrónico</label>
+          <input type="text" id="correo_electronico" name="correo_electronico">
+        </div>
+        <div class="input_container">
+          <label>Imagen de la empresa</label>
+          <input type="file" name="files" id="files" placeholder="pictures..." multiple>
+        </div>
+
+        <div class="input_container_button">
+          <button id="upload-button" type="submit"><label>SUBIR</label></button>
+          <button id="cancel-edit" type="button" style="display:none; margin-left:8px;">Cancelar edición</button>
+        </div>
+      </form>
+
+      <h2>Lista</h2>
+      <ul id="sponsors-list"></ul>
+    </div>
+  </div>
+
+<script src="appsponsors.js" defer></script>
+</body>
+</html>

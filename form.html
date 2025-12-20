@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Pikate</title>
+  <style>
+    /* Mini estilos para la galería */
+    .pet-item { margin-bottom: 14px; }
+    .pet-header { margin-bottom: 6px; }
+    .pet-photos { display: flex; gap: 8px; flex-wrap: wrap; margin: 6px 0 0 0; padding: 0; }
+    .pet-photos img { width: 96px; height: 96px; object-fit: cover; border-radius: 6px; border: 1px solid #ddd; }
+    .pet-actions button { margin-left: 8px; }
+    .muted { color: #666; font-size: 0.9em; }
+  </style>
+</head>
+
+<body>
+  <div class="main_content">
+        
+                 <header>
+            <div class="header_contenido">
+                <div class="logo">MiLogo</div>
+                <!--MENÚ HAMBURGUESA-->
+                <nav id="menú_nav">
+                    <!--CHECKBOX DE CONTROL-->
+                    <label for="hamburguesa">&#9776;</label>
+                    <input type="checkbox" id="hamburguesa">
+                    <!--DESPLEGABLE-->
+                    <div id="menú_items">
+                        <a href="index.html">Inicio</a>
+                        <a href="user.html">Píkate</a>
+                        <a href="pikate.html">Los pikados</a>
+                        <a href="pikateclub.html">Clubes</a>
+                        <a href="pikatesponsors.html">Marcas</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main_container" id="main_content">
+    <div class="title">Deportistas</div>
+    <div class="formulario">
+      <form id="alta_profile">
+        <div class="input_container">
+          <label>Nombre</label>
+          <input type="text" name="nombre" id="nombre" placeholder="tu nombre..." autocomplete="off">
+        </div>
+        <div class="input_container">
+          <label>apellido</label>
+          <input type="text" name="apellido" id="apellido" placeholder="Tu apellido" autocomplete="off">
+        </div>
+        <div class="input_container">
+          <label>Fecha Nacimiento</label>
+          <input type="date" name="fecha" id="fecha" autocomplete="off">
+        </div>
+        <div class="input_container">
+          <label>Disciplina</label>
+          <select name="disciplina" id="disciplina">
+          <option value="">Seleccione...</option>
+          <option value="Atletismo">Atletismo</option>
+          <option value="DeportesEquipo">Deportes de equipo</option>
+      </select>
+        </div>
+
+<div class="input_container">
+  <label>Deporte</label>
+  <select name="deporte" id="deporte">
+    <option value="">Seleccione...</option>
+  </select>
+</div>
+
+        <div class="input_container">
+          <label>Provincia</label>
+          <input type="text" name="provincia" id="provincia" placeholder="De donde eres..." autocomplete="off">
+        </div>
+        <div class="input_container">
+          <label>Localidad</label>
+         <input type="text" name="localidad" id="localidad" placeholder="De donde eres..." autocomplete="off">
+        </div>
+        
+        <div class="input_container">
+          <label>Premio</label>
+          <select name="premio" id="premio">
+            <option value="Bronce Regional">Bronce Regional</option>
+            <option value="Plata Regional">Plata Regional</option>
+            <option value="Oro Regional">Oro Regional</option>
+            <option value="Bronce Nacional">Bronce Nacional</option>
+            <option value="Plata Nacional">Plata Nacional</option>
+            <option value="Oro Nacional">Oro Nacional</option>
+            <option value="Bronce Continental">Bronce Continental</option>
+            <option value="Plata Contienntal">Plata Continental</option>
+            <option value="Oro Continental">Oro Continental</option>
+            <option value="Bronce Internacional">Bronce Internacional</option>
+            <option value="Plata Internacional">Plata Internacional</option>
+            <option value="Oro Internacional">Oro Internacional</option>
+          </select>
+        </div>
+        <div class="input_container">
+          <label>Teléfono</label>
+          <input type="text" name="telefono" id ="telefono">
+          </select>
+        </div>
+        <div class="input_container">
+          <label>Correo Electrónico</label>
+          <input type="text" name="correo_electronico" placeholder="Tu Email..." id="correo_electronico">
+        </div>
+        
+        <div class="input_container">
+          <label>Alto Rendimiento</label>
+          <input type="checkbox" name="alto_rendimiento" id="alto_rendimiento">
+        </div>
+        <div class="input_container">
+          <label>Patrocinado por</label>
+          <input type="text" name="sponsor" id="sponsor" placeholder="Empresa..." autocomplete="off">
+        </div>
+        <div class="input_container">
+          <label>Fotos</label>
+          <input type="file" name="files" id="files" placeholder="pictures..." multiple>
+        </div>
+
+        <div class="input_container_button">
+          <button id="upload-button" type="submit"><label>SUBIR</label></button>
+          <button id="cancel-edit" type="button" style="display:none; margin-left:8px;">Cancelar edición</button>
+        </div>
+      </form>
+
+      <h2>Lista</h2>
+      <ul id="profiles-list"></ul>
+    </div>
+  </div>
+
+<script src="app.js" defer></script>
+</body>
+</html>

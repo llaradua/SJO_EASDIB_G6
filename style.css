@@ -1,3 +1,68 @@
+:root{
+  --bg-color:#ffffff;
+  --text-color:#ffffff;
+  --main-color:#000000;
+  --dark-color:#000000;
+}
+
+*{padding:0;margin:0;box-sizing:border-box;font-family:"Helvetica Neue",sans-serif;}
+
+body{
+  background-color:#ffffff;
+}
+
+
+
+
+.nav_container{position:absolute;left:80px;}
+
+.nav_container a, .nav_item{
+  display:block;
+  position:relative;
+  padding-top:45px;
+  padding-left:7px;
+  padding-right:7px;
+  padding-bottom:7px;
+  line-height:16px;
+  float:left;
+  color:#ffffff;
+  text-decoration:none;
+  cursor:pointer;
+  font-size:24px;
+  font-weight:700;
+  margin-bottom:25px;
+  text-align:center;
+}
+
+.main_container{
+  max-width:600px;
+  width:100%;
+  margin:50px auto;
+  padding:30px;
+  background-color:#ffffff;
+  border:2px solid #000000;
+  border-radius:20px;
+}
+
+.title{font-size:24px;font-weight:700;margin-bottom:25px;color:#000;text-align:center;}
+
+.input_container{margin-bottom:15px;display:flex;align-items:center;}
+
+.input_container label{font-weight:700;width:200px;color:#000;margin-right:10px;font-size:14px;text-transform:uppercase;}
+
+.input_container_button{display:flex;justify-content:center;}
+
+.input_container_button button{
+  width:50%;
+  padding:8px 10px;
+  font-size:15px;
+  border:0;
+  background:#000;
+  color:#fff;
+  cursor:pointer;
+  border-radius:3px;
+  outline:none;
+}
 /*ESTILO GENERAL*/
 * {
     margin:0;
@@ -246,34 +311,9 @@ DEFINICIÓN DE MEDIDAS
         }
         .muted { color: #999; font-style: italic; }
         /* Las acciones (botones) no se necesitan en esta vista de solo listado */
-        .pet-actions { display: none; }
-
-        .form1 {background-color: rgb(214, 112, 112);}
-        .form2 {background-color: rgb(129, 129, 211);}
-        .form3 {background-color: rgb(118, 180, 118);}
-
-        /* Estilos para el botón de la web oficial dentro del listado */
-/* Estilos para el botón de la web oficial dentro del listado */
-.btn-web-sponsor {
-    /* Diseño Base */
-    display: block; /* Para centrarlo y que mantenga el ancho */
-    width: 60%; /* <-- Reducido para que no ocupe todo el ancho */
-    max-width: 300px; /* Limita el tamaño máximo en pantallas grandes */
-    margin: 10px auto 0 auto; /* <-- Auto-márgenes para centrarlo horizontalmente */
-    padding: 8px 12px; /* <-- REDUCIDO: Espaciado interno más pequeño */
-    background-color: black; 
-    color: white; 
-    text-align: center;
-    border: none; 
-    border-radius: 5px; 
-    font-size: 0.9em; /* <-- REDUCIDO: Letra más pequeña */
-    font-weight: bold;
-    text-decoration: none; 
-    transition: background-color 0.3s ease; 
-    cursor: pointer;
+        .pet-actions {
+  display: none !important;
 }
 
-/* Efecto al pasar el ratón (Hover) */
-.btn-web-sponsor:hover {
-    background-color: #333333;
-}
+        
+ 
