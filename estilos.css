@@ -11,6 +11,11 @@ body {
     align-items:center;
 }
 
+body::-webkit-scrollbar { /*ocultar scrollbar en Chrome, Safari, Opera*/
+    display: none;
+}
+
+
 .contenedor_global {
     max-width:100%;
     height: 100vh;
@@ -21,7 +26,6 @@ a {
     color:black;
 }
 
-
 /*----------------
 HEADER
 ----------------*/
@@ -31,7 +35,6 @@ header {
     overflow-x:auto;
     max-width:100%;
     justify-content:center;
-    max-height: 350px;
 }
 
 .header_contenido {
@@ -42,7 +45,6 @@ header {
     padding:1rem 3rem;
     position: relative;
 }
-
 
 /*----------------
 MENÚ HAMBURGUESA DESPLEGABLE
@@ -106,7 +108,6 @@ SECCIONES HOME
     background-color:rgb(140, 60, 65);
 }
 
-
 /*----------------
 CTA "PÍKATE"
 ----------------*/
@@ -134,22 +135,21 @@ CTA "PÍKATE"
 /*----------------
 SECCIONES PÍKATE
 ----------------*/
-
 .deportista_o_marca section {
     padding: 50px;
     justify-content: center;
     border: none;
     font-size: 1.5rem;
     width:100%;
-    height: 45vh; /*sumado a los 10vh de altura del header,todo ocupará
+    height: 30vh; /*sumado a los 10vh de altura del header,todo ocupará
     justo el 100vh*/
 }
 
-.opción1 {
+.deportista, .patrocinador {
     background-color:rgb(167, 201, 145);
 }
 
-.opción2 {
+.club {
     background-color:rgb(85, 150, 130);
 }
 
@@ -225,7 +225,14 @@ DEFINICIÓN DE MEDIDAS
 
     .deportista_o_marca section {
         font-size: 1.5rem;
-        width: 50vw; /*cada opción ocupa el 50% de la pantalla*/
+        width: 33vw; 
+        height: 90vh; /*sumado a los 10vh de altura del header,todo ocupará
+        justo el 100vh*/
+    }
+
+    section.club {
+        font-size: 1.5rem;
+        width: 34vw;
         height: 90vh; /*sumado a los 10vh de altura del header,todo ocupará
         justo el 100vh*/
     }
