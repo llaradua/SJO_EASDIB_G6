@@ -32,9 +32,9 @@ HEADER
 header {
     background-color:rgb(187, 11, 11);
     color:white;
-    overflow-x:auto;
-    max-width:100%;
-    justify-content:center;
+    overflow-x: auto;
+    max-width: 100%;
+    justify-content: center;
 }
 
 .header_contenido {
@@ -77,6 +77,11 @@ MENÚ HAMBURGUESA DESPLEGABLE
 #menú_nav input:checked ~ #menú_items {
     display: block;
     /*el desplegable será visible cuando el checkbox esté activado*/
+}
+
+#menú_nav input:not(:checked) ~ header {
+    height:10vh;
+    /*el header no desplegado ocupará el 10vh del total*/
 }
 
 /*----------------
@@ -172,6 +177,39 @@ footer {
 
 footer p {
     color:white;
+}
+
+/*----------------
+FORMULARIO DEPORTISTA
+----------------*/
+.formulario_deportista {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.formulario_deportista h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.formulario_deportista input[type="text"],
+.formulario_deportista input[type="date"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.formulario_deportista input[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #bb0b0b;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
 /*----------------
