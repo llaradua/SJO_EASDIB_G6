@@ -185,23 +185,56 @@ FORMULARIO DEPORTISTA
 .formulario_deportista {
     background-color: white;
     color:black;
-    padding: 2rem;
-    margin: 2rem auto;
-    max-width: 500px;
+    justify-content: center;
+    margin:50px 10%;
     border-radius: 10px;
 }
 
 .formulario_deportista h2 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 1rem;
 }
 
-.formulario_deportista input[type="text"],
-.formulario_deportista input[type="date"] {
-    width: 100%;
+.formulario_deportista input {
     padding: 0.5rem;
     margin-bottom: 1rem;
-    border-radius: 5px;
+    border-radius: 15px;
+}
+
+.formulario_deportista label {
+    font-size: 0.8rem;
+    color:rgb(140, 60, 65);
+    display: block;
+}
+
+#checkbox_rendimiento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 15px;
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    margin: 0;
+}
+
+#checkbox_rendimiento input:checked ~ #checkbox_rendimiento {
+    background-color: rgb(140, 60, 65);
+    color: white;
+    border: none;
+}
+
+#nombre, #mi_patrocinador, #email {
+    width: 100%;
+}
+
+#deporte, #localidad, #provincia, #tlf, #redes_sociales {
+    width: 49%;
 }
 
 .formulario_deportista input[type="submit"] {

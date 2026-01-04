@@ -42,27 +42,44 @@
                 </div>
    
             </header>
-        
-        </div>
-
-        <div class="formulario_deportista">
-            <!--Contenido del formulario-->
-            <form>
+            
+            <div class="formulario_deportista">
+                <!--Contenido del formulario-->
+                <form>
                 <h2>Comparte tu recorrido</h2>
                 <input type="text" id="nombre" placeholder="Nombre y apellidos"required>
 
-                <input type="date" id="fecha"  required>
+                <label for="fecha">Fecha de nacimiento</label>
+                <input type="date" id="fecha" required>
+                
+                <div id="checkbox_rendimiento">
+                    <p>Deportista de alto rendimiento</p>
+                    <input type="checkbox" id="rendimiento" value="Deportista de alto rendimiento">
+                </div>
+                
+                <label for="mi_patrocinador">¿Tienes algún patrocinador?</label>
+                <input type="text" id="mi_patrocinador" placeholder="Nombre de la empresa"">
 
-                <label for="deporte">Deporte:</label>
-                <input type="text" id="deporte" name="deporte" required>
+                <input type="text" id="deporte" placeholder="Deporte" required>
 
-                <label for="club">Club:</label>
-                <input type="text" id="club" name="club">
+                <input type="text" id="localidad" placeholder="Localidad" required>
+
+                <input type="text" id="provincia" placeholder="Provincia" required>
+
+                <input type="email" id="email" placeholder="e-mail" required>
+
+                <input type="tel" id="tlf" placeholder="Telf." required>
+
+                <input type="url" id="redes_sociales" placeholder="URL redes sociales">
 
                 <input type="submit" value="Enviar">
-            </form>
+                </form>
            
+            </div>
+        
         </div>
+
+        
 
     </body>
 
