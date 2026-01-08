@@ -30,7 +30,7 @@ a {
 HEADER
 ----------------*/
 header {
-    background-color:rgb(187, 11, 11);
+    background-color:#B11D29;
     color:white;
     overflow-x: auto;
     max-width: 100%;
@@ -54,7 +54,7 @@ MENÚ HAMBURGUESA DESPLEGABLE
     display: block;
     width: 100%;
     padding: 20px 0px;
-    background-color:rgb(187, 11, 11);
+    background-color:#B11D29;
     color: white;
 }
 
@@ -190,7 +190,7 @@ FORMULARIO DEPORTISTA
     border-radius: 10px;
 }
 
-.formulario_deportista h2 {
+.formulario_deportista .f h2 {
     text-align: left;
     margin-bottom: 1rem;
 }
