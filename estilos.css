@@ -9,6 +9,10 @@ body {
     font-family:Arial, Helvetica, sans-serif;
     justify-content:center;
     align-items:center;
+    background-image: url('Fondo_home.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh; 
 }
 
 body::-webkit-scrollbar { /*ocultar scrollbar en Chrome, Safari, Opera*/
@@ -98,19 +102,19 @@ SECCIONES HOME
 }
 
 .píkate {
-    background-color:rgb(167, 201, 145);
+    background-color:rgb(167, 201, 145, 0.8);
 }
 
 .pikados {
-    background-color:rgb(90, 149, 211);
+    background-color:rgb(90, 149, 211, 0.8);
 }
 
 .clubes {
-    background-color:rgb(85, 150, 130);
+    background-color:rgb(85, 150, 130, 0.8);
 }
 
 .marcas {
-    background-color:rgb(140, 60, 65);
+    background-color:rgb(140, 60, 65, 0.8);
 }
 
 /*----------------
