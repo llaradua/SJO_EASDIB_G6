@@ -192,11 +192,14 @@ FORMULARIO DEPORTISTA
     justify-content: center;
     margin:50px 10%;
     border-radius: 10px;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
 }
 
-.formulario_deportista .f h2 {
+.formulario_deportista h2 {
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
 }
 
 .formulario_deportista input {
@@ -248,6 +251,8 @@ input[type="checkbox"] {
     color: black;
     border: none;
     border-radius: 5px;
+    margin-top:30px;
+    margin-bottom: 100px;
 }
 
 /*----------------
