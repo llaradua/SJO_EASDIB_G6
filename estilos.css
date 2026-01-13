@@ -9,10 +9,11 @@ body {
     font-family:Arial, Helvetica, sans-serif;
     justify-content:center;
     align-items:center;
-    background-image: url('Fondo_home.jpg');
+    background-image: url('img/Fondo_home.jpg');
     background-size: cover;
     background-attachment: fixed;
-    min-height: 100vh; 
+    min-height: 100vh;
+    min-width:100vw; 
 }
 
 body::-webkit-scrollbar { /*ocultar scrollbar en Chrome, Safari, Opera*/
