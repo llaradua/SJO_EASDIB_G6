@@ -54,7 +54,7 @@ MENÚ HAMBURGUESA DESPLEGABLE
     display: block;
     width: 100%;
     padding: 20px 0px;
-    background-color:#B11D29;
+    background-color:rg#B11D29;
     color: white;
 }
 
@@ -89,23 +89,68 @@ SECCIONES HOME
 ----------------*/
 #cuerpo {
     background-image: url('img/Fondo_home.jpg');
-    background-size: cover;
+    background-position: center;
+    
+    background-size: cover; 
     background-attachment: fixed;
-    background-repeat: no-repeat; 
-    min-height:100vh;
-    max-width: 100vw;
+    background-repeat: no-repeat;
+    
+    min-height: 100vh;
+    width: 100%;
+    padding: 50px 0;
+}
+
+/* 1. Ajuste del enlace para que solo ocupe el tamaño del cuadro */
+.contenedor_home a {
+    text-decoration: none;
+    display: inline-block; 
+    width: 80%;            
+    max-width: 1000px;     
+    margin: 20px auto;     
+    display: flex;         
     justify-content: center;
-    align-items: center;
 }
 .contenedor_home section {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: none;
     font-size: 1.5rem;
-    width:100%;
+    color: white;
+    width: 100%;        
     height: 400px;
+    background-color: rgba(255, 143, 143, 0.7);
+    backdrop-filter: blur(5px); 
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    
+
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                background-color 0.3s ease, 
+                box-shadow 0.3s ease;
 }
+
+
+.contenedor_home a:hover section {
+    background-color: rgba(255, 143, 143, 0.85);
+    transform: scale(1.03); 
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.contenedor_home a:active section {
+    transform: scale(0.96); 
+    background-color: rgba(255, 143, 143, 1); 
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transition: transform 0.1s; 
+}
+
+/* color al pulsar sobre cada sección */
+.contenedor_home a:hover .pikados { background-color: rgba(237, 164, 255, 0.9); }
+.contenedor_home a:hover .píkate { background-color: rgba(167, 201, 145, 0.9); }
+.contenedor_home a:hover .clubes { background-color: rgba(143, 200, 255, 0.9); }
+.contenedor_home a:hover .marcas { background-color: rgba(255, 143, 143, 0.9); }
+
+
 
 .píkate {
     background-color:rgb(167, 201, 145, 0.8);
@@ -154,22 +199,56 @@ CTA "PÍKATE"
 /*----------------
 SECCIONES PÍKATE
 ----------------*/
-.deportista_o_marca section {
-    padding: 50px;
+
+.deportista_o_marca, .deportista_o_marca * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.deportista_o_marca {
+    display: flex;
+    flex-wrap: wrap;      
     justify-content: center;
-    border: none;
-    font-size: 1.5rem;
-    width:100%;
-    height: 30vh; /*sumado a los 10vh de altura del header,todo ocupará
-    justo el 100vh*/
+    gap: 15px;           
+    padding: 20px;
+    width: 100%;           
+    max-width: 100vw;      
+    overflow-x: hidden;    
 }
 
-.deportista, .patrocinador {
-    background-color:rgb(167, 201, 145);
+.deportista_o_marca section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    width: 140px;        
+    height: 140px;         
+    
+    border-radius: 12px;
+    color: white;
+    font-size: 1rem;      
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    
+
+    background: rgba(215, 45, 45, 0.6);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    
+    transition: 0.3s ease;
 }
 
-.club {
-    background-color:rgb(85, 150, 130);
+/* 4. Interacción (Hover y Active) */
+.deportista_o_marca section:hover {
+    background: rgba(215, 45, 45, 0.9);
+    transform: scale(1.05); 
+    z-index: 10;           
+}
+
+.deportista_o_marca section:active {
+    transform: scale(0.95); /* Efecto pulsación */
 }
 
 /*----------------
@@ -301,10 +380,6 @@ DEFINICIÓN DE MEDIDAS
 
     #menú_nav label, #hamburguesa {
         display: none;
-    }
-
-    #cuerpo {
-        
     }
 
     /*----------------
