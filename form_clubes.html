@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+<!--AVISO NO TOCAR NINGÚN ID DEL FORMULARIO NI NINGÚN NAME DE DENTRO DEL FORMULARIO SI ALGUIEN LO HACE 🐶🔫 EL PERRO MUERE😡 
+(y el encargado del backend se tira de un quinto piso)-->
+<head>
 
-    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="estilos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>1Pike | Píkate</title>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="normalize.css" rel="stylesheet">
-        <link href="estilos.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <title>1Pike | Píkate</title>
+</head>
 
-    </head>
+<body>
 
-    <body>
+    <div class="contenedor_global">
 
-        <div class="contenedor_global">
+        <header>
 
-            <header>
+            <div class="header_contenido">
 
-                <div class="header_contenido">
-
-                    <a href="index.html">
-                        <div class="logo">
-                            <img src="img/1pike_rojo.png" alt="LOGO" width="120" height="100">
-                        </div>
-                    </a> 
+                <a href="index.html">
+                    <div class="logo">
+                        <img src="img/1pike_rojo.png" alt="LOGO" width="120" height="100">
+                    </div>
+                </a>
 
                 <div class="header_contenido">
 
@@ -48,35 +49,54 @@
                     </nav>
 
                 </div>
-   
-            </header>
-                <div class="formulario_deportista">
-                    <form>
-                        <h2>Comparte tu recorrido</h2>
-                        <input type="text" id="nombre" placeholder="Nombre del club"required>
-        
-                        <input type="text" id="mi_patrocinador" placeholder="Disciplina">
 
-                        <input type="text" id="deporte" placeholder="Deporte" required>
+        </header>
+        <div class="formulario_deportista">
+            <form id="alta_profile">
+                <h2>Comparte tu recorrido</h2>
+                <input type="text" id="nombre" placeholder="Nombre del club" required>
 
-                        <input type="text" id="localidad" placeholder="Dirección" required>
+               <select id="disciplina" required>
+                <option value="">Seleccione Disciplina...</option>
+                <option value="Atletismo">Atletismo</option>
+                <option value="DeportesEquipo">Deportes de Equipo</option>
+    </select>
 
-                        <input type="text" id="localidad" placeholder="Localidad" required>
+<select id="deporte" required>
+    <option value="">Seleccione Deporte...</option>
+</select>
 
-                        <input type="text" id="provincia" placeholder="Provincia" required>
+<textarea id="descripcion" style="display:none"></textarea>
 
-                        <input type="email" id="email" placeholder="e-mail" required>
+                <input type="text" id="deporte" placeholder="Deporte" required>
 
-                        <input type="tel" id="tlf" placeholder="Telf" required>
+                <input type="text" id="direccion" placeholder="Dirección" required>
 
-                        <input type="url" id="redes_sociales" placeholder="URL redes sociales">
+                <input type="text" id="localidad" placeholder="Localidad" required>
 
-                        <input type="submit" value="Enviar">
+                <input type="text" id="provincia" placeholder="Provincia" required>
 
-                    </form>
-                
-                </div>
+                <input type="email" id="correo_electronico" placeholder="e-mail" required>
 
-    </body>
+                <input type="tel" id="telefono" placeholder="Telf" required>
+
+                <input type="url" id="redes_sociales" placeholder="URL redes sociales">
+                <input type="file" id="files" name="files">
+
+                <div class="botones_accion">
+                <input id="upload-button" type="submit" value="Enviar">
+                <button type="button" id="cancel-edit" style="display:none;">Cancelar Edición</button>
+            </div>
+            </form>
+
+        </div>
+        <h2>Lista</h2>
+        <ul id="clubes-list">
+            <li class="pet-item"></li>
+        </ul>
+    </div>
+    <script src="appclubes.js" defer></script>
+
+</body>
 
 </html>

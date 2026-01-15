@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-
+<!--AVISO NO TOCAR NINGÚN ID DEL FORMULARIO NI NINGÚN NAME DE DENTRO DEL FORMULARIO SI ALGUIEN LO HACE 🐶🔫 EL PERRO MUERE😡 
+(y el encargado del backend se tira de un quinto piso)-->
     <head>
 
         <meta charset="UTF-8">
@@ -50,32 +51,40 @@
                 </div>
    
             </header>
-            <div class="formulario_deportista">
-                <form>
-                    <h2>Comparte tu recorrido</h2>
-                    <input type="text" id="nombre" placeholder="Nombre del patrocinador"required>
-    
-                    <input type="text" id="mi_patrocinador" placeholder="NIF">
+          <div class="formulario_deportista"> 
+    <form id="alta_profile">
+        <h2>Registro de Patrocinador</h2>
+        
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre del patrocinador" required>
+        <input type="text" id="nif" name="nif" placeholder="NIF" required>
+        
+        <input type="url" id="web" name="web" placeholder="Página Web oficial (https://...)" required>
 
-                    <input type="text" id="deporte" placeholder="Página Web oficial" required>
+        <input type="text" id="direccion" name="direccion" placeholder="Dirección completa" required>
+        <input type="text" id="localidad" name="localidad" placeholder="Localidad" required>
+        <input type="text" id="provincia" name="provincia" placeholder="Provincia" required>
+        <input type="email" id="correo_electronico" name="correo_electronico" placeholder="e-mail de contacto" required>
+        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+        <input type="url" id="redes_sociales" name="redes_sociales" placeholder="URL Redes Sociales">
 
-                    <input type="text" id="localidad" placeholder="Dirección" required>
+        <input type="file" id="files" name="files" multiple>
 
-                    <input type="text" id="localidad" placeholder="Localidad" required>
-
-                    <input type="text" id="provincia" placeholder="Provincia" required>
-
-                    <input type="email" id="email" placeholder="e-mail" required>
-
-                    <input type="tel" id="tlf" placeholder="Telf." required>
-
-                    <input type="url" id="redes_sociales" placeholder="URL redes sociales">
-
-                    <input type="submit" value="Enviar">
-
-                </form>
-                
+         <div class="botones_accion">
+                <input id="upload-button" type="submit" value="Enviar">
+                <button type="button" id="cancel-edit" style="display:none;">Cancelar Edición</button>
             </div>
+    </form>
+</div>
+
+<div class="listado_deportistas"> 
+    <h3>Patrocinadores Registrados</h3>
+    <ul id="sponsors-list">
+        </ul>
+</div>
+
+<script src="appsponsors.js"></script>
+                
+            
 
     </body>
 
