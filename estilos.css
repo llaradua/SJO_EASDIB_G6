@@ -304,12 +304,15 @@ FORMULARIO DEPORTISTA
 .formulario_deportista h2 {
     text-align: left;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .formulario_deportista input {
     padding: 0.5rem;
     margin-bottom: 1rem;
     border-radius: 15px;
+    height: 45px;
+    width: 100%;
 }
 
 .formulario_deportista label {
@@ -320,8 +323,9 @@ FORMULARIO DEPORTISTA
 .formulario_deportista select {
     width: 100%;
     padding: 10px; 
+    height: 45px;
     margin-bottom: 15px;
-    border-radius:10px  ; 
+    border-radius:15px  ; 
     border-bottom: 2px solid #333; 
     background-color: transparent;
     font-family: inherit;
@@ -344,27 +348,15 @@ FORMULARIO DEPORTISTA
     border: 1px solid black;
     padding: 0.5rem;
     border-radius: 15px;
-    height: 40px;
+    width: 100%;
+    height: 45px;
     margin-bottom: 1rem;
 }
+
 
 input[type="checkbox"] {
     width: 20px;
     margin: 0;
-}
-
-#checkbox_rendimiento input:checked ~ #checkbox_rendimiento {
-    background-color: rgb(140, 60, 65);
-    color: white;
-    border: none;
-}
-
-#nombre, #mi_patrocinador, #email {
-    width: 100%;
-}
-
-#deporte, #localidad, #provincia, #tlf, #redes_sociales {
-    width: 49%;
 }
 
 .formulario_deportista input[type="submit"] {
@@ -439,6 +431,25 @@ DEFINICIÓN DE MEDIDAS
         height: 90vh; /*sumado a los 10vh de altura del header,todo ocupará
         justo el 100vh*/
     }
+
+    /*----------------
+    FORMULARIO DEPORTISTA
+    ----------------*/
+
+    input[type="checkbox"] {
+        max-width: 25px;
+        margin: 0;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .formulario_deportista input {
+        width: 45%;
+        display: inline-block;
+    }
+
 }
 
   #cuerpo { padding: 20px; }
@@ -479,5 +490,5 @@ DEFINICIÓN DE MEDIDAS
         .muted { color: #999; font-style: italic; }
         /* Las acciones (botones) no se necesitan en esta vista de solo listado */
         .pet-actions {
-  display: none !important;
+    display: none !important;
 }

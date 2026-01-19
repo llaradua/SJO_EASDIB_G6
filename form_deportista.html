@@ -53,60 +53,59 @@
         </header>
 
         <div class="contenedor_global">
-    <div class="formulario_deportista">
-        <form id="alta_profile">
-            <h2>Comparte tu recorrido</h2>
+            <div class="formulario_deportista">
+                <form id="alta_profile">
+                    <h2>Comparte tu recorrido</h2>
             
-            <input type="text" id="nombre" placeholder="Nombre y apellidos" required>
+                    
+                    <input type="text" id="nombre" placeholder="Nombre y apellidos" required>
+                    
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input type="date" id="fecha" required>
+                
+                    <select id="disciplina" required>
+                        <option value="">Seleccione disciplina...</option>
+                        <option value="ArtesMarciales">Artes marciales</option>
+                        <option value="Atletismo">Atletismo</option>
+                        <option value="Automovilismo">Automovilismo</option>
+                        <option value="Deportes acuáticos">Deportes acuáticos</option>
+                        <option value="Deportes de equipo">Deportes de equipo</option>
+                        <option value="Deportes de fuerza">Deportes de fuerza</option>
+                        <option value="Deportes de invierno">Deportes de invierno</option>
+                        <option value="Deportes de precisión">Deportes de precisión</option>
+                        <option value="Deportes de raqueta">Deportes de raqueta</option>
+                        <option value="Gimnasia">Gimnasia</option>
+                    </select>
 
-            <label for="fecha">Fecha de nacimiento</label>
-            <input type="date" id="fecha" required>
+                    <input type="text" id="deporte" placeholder="Deporte" required>
 
-            <label for="disciplina">Disciplina</label>
-            <select id="disciplina" required>
-                <option value="">Seleccione disciplina...</option>
-                <option value="Atletismo">Atletismo</option>
-                <option value="DeportesEquipo">Deportes de Equipo</option>
-            </select>
+                    <div id="checkbox_rendimiento">
+                        <p>Deportista de alto rendimiento</p>
+                        <input type="checkbox" id="alto_rendimiento">
+                    </div>
+                   
+                    <label for="mi_patrocinador">¿Tienes algún patrocinador?</label>
+                        <input type="text" id="sponsor" placeholder="Nombre de la empresa">
+                    
+                    <input type="text" id="localidad" placeholder="Localidad" required>
+                    <input type="text" id="provincia" placeholder="Provincia" required>
+                    <input type="email" id="correo_electronico" placeholder="e-mail" required>
+                    <input type="tel" id="telefono" placeholder="Telf." required>
+                    <input type="url" id="redes_sociales" placeholder="URL redes sociales">
 
-            <label for="deporte">Deporte</label>
-            <select id="deporte" required>
-                <option value="">Primero seleccione disciplina</option>
-            </select>
+                    <input type="hidden" id="premio">
+                    <textarea id="descripcion" style="display:none"></textarea>
 
-            <div id="checkbox_rendimiento">
-                <p>Deportista de alto rendimiento</p>
-                <input type="checkbox" id="alto_rendimiento">
+                    <input type="file" id="files" placeholder="pictures..." multiple>
+            
+                    <div class="botones_accion">
+                        <input id="upload-button" type="submit" value="Enviar">
+                        <button type="button" id="cancel-edit" style="display:none;">Cancelar Edición</button>
+                    </div>
+                </form>
             </div>
 
-            <label for="mi_patrocinador">¿Tienes algún patrocinador?</label>
-            <input type="text" id="sponsor" placeholder="Nombre de la empresa">
-
-            <input type="text" id="localidad" placeholder="Localidad" required>
-            <input type="text" id="provincia" placeholder="Provincia" required>
-            <input type="email" id="correo_electronico" placeholder="e-mail" required>
-            <input type="tel" id="telefono" placeholder="Telf." required>
-            <input type="url" id="redes_sociales" placeholder="URL redes sociales">
-
-            <input type="hidden" id="premio">
-            <textarea id="descripcion" style="display:none"></textarea>
-
-            <input type="file" id="files" placeholder="pictures..." multiple>
-            
-            <div class="botones_accion">
-                <input id="upload-button" type="submit" value="Enviar">
-                <button type="button" id="cancel-edit" style="display:none;">Cancelar Edición</button>
-            </div>
-        </form>
-    </div>
-
-    <div class="listado_deportistas">
-        <h3>Deportistas Registrados</h3>
-        <ul id="profiles-list">
-            </ul>
-    </div>
-
-</div>
+        </div>
 
     </div>
 
