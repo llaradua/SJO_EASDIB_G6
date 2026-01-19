@@ -303,6 +303,13 @@ footer p {
     color:white;
 }
 
+p#firma {
+    font-size: 0.8rem;
+    color:#630505;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
 /*----------------
 FORMULARIO DEPORTISTA
 ----------------*/
@@ -422,6 +429,19 @@ DEFINICIÓN DE MEDIDAS
 
     #menú_nav label, #hamburguesa {
         display: none;
+    }
+
+    /*----------------
+    SECCIONES HOME
+    ----------------*/
+    .contenedor_home h2 {
+        margin-left: 60px;
+        font-size: 2.3rem;
+    }
+    .contenedor_home p {
+        font-size: 1.5rem;
+        margin: 90px 60px 20px 350px;
+        align-items: bottom;
     }
 
     /*----------------
