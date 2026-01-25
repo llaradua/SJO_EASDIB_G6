@@ -56,13 +56,14 @@
             <div class="formulario_deportista">
                 <form id="alta_profile">
                     <h2>Comparte tu recorrido</h2>
-            
                     
                     <input type="text" id="nombre" placeholder="Nombre y apellidos" required>
                     
-                    <label for="fecha">Fecha de nacimiento</label>
-                    <input type="date" id="fecha" required>
-                
+                    <div id="fecha_div">
+                        <label for="fecha">Fecha de nacimiento</label>
+                        <input type="date" id="fecha" required>
+                    </div>
+
                     <select id="disciplina" required>
                         <option value="">Seleccione disciplina...</option>
                         <option value="ArtesMarciales">Artes marciales</option>
@@ -93,10 +94,12 @@
                         <option value="Internacional">Internacional</option>
                         <option value="Olimpico">Olímpico</option>
                     </select>
-                   
-                    <label for="mi_patrocinador">¿Tienes algún patrocinador?</label>
-                        <input type="text" id="sponsor" placeholder="Nombre de la empresa">
                     
+                    <div id="sponsor_div">
+                        <label for="mi_patrocinador">¿Tienes algún patrocinador?</label>
+                        <input type="text" id="sponsor" placeholder="Nombre de la empresa">
+                    </div>
+
                     <input type="text" id="localidad" placeholder="Localidad" required>
                     <input type="text" id="provincia" placeholder="Provincia" required>
                     <input type="email" id="correo_electronico" placeholder="e-mail" required>
