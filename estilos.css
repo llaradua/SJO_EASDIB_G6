@@ -489,6 +489,8 @@ DEFINICIÓN DE MEDIDAS
     }
 
 
+  /*  ATENCIÓN CUIDADO CON TOCAR/ELIMINAR ESTA PARTE AUNQUE PAREZCA QUE NO HAGA NADA 
+    ESTA RELACIONADO CON LOS POSTS EN LOS ARCHIVOS JS ELIMINAR ESTA PARTE SE CARGA EL CSS DE LOS POSTS */
   #cuerpo { padding: 20px; }
         .list-title { font-size: 2em; color: #ffffff; margin-bottom: 20px; border-bottom: 2px solid #ccc; padding-bottom: 10px; }
         
@@ -529,3 +531,80 @@ DEFINICIÓN DE MEDIDAS
         .pet-actions {
     display: none !important;
 }
+/* --- DISEÑO DE TARJETA DIVIDIDA --- */
+
+/* Contenedor principal del post */
+.pet-item {
+    cursor: pointer;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+/* El cuerpo expandible está oculto por defecto */
+.body-expandible {
+    display: none;
+    gap: 20px;
+    margin-top: 15px;
+    align-items: flex-start;
+}
+
+/* Se muestra al hacer clic */
+.pet-item.expanded .body-expandible {
+    display: flex;
+}
+
+/* Columna de Imagen (Izquierda) */
+.col-fotos {
+    flex: 1; /* Ocupa el 50% aprox */
+    min-width: 150px;
+}
+
+.col-fotos img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+     /* Ajusta la imagen sin deformarla */
+    border-radius: 10px;
+    border: 2px solid #B11D29;
+}
+
+/* Columna de Datos (Derecha) */
+.col-datos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.col-datos p {
+    margin: 0;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 4px;
+}
+
+/* Responsivo: Si la pantalla es pequeña, se apilan verticalmente */
+@media (max-width: 600px) {
+    .pet-item.expanded .body-expandible {
+        flex-direction: column;
+    }
+    .col-fotos {
+        width: 100%;
+    }
+}
+.link-redes-detalle {
+    color: #bb0b0b; /* El rojo que usas en tu logo/header */
+    text-decoration: underline;
+    word-break: break-all; /* Por si la URL es muy larga, que no rompa el diseño */
+    font-weight: bold;
+}
+
+.link-redes-detalle:hover {
+    color: black;
+    text-decoration: none;
+}}
