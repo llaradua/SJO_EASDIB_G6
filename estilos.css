@@ -343,6 +343,7 @@ FORMULARIO DEPORTISTA
     color:rgb(140, 60, 65);
     display: block;
 }
+
 .formulario_deportista select {
     width: 100%;
     padding: 10px; 
@@ -364,6 +365,7 @@ FORMULARIO DEPORTISTA
     background-position: right 10px top 50%;
     background-size: 12px auto;
 }
+
 #checkbox_rendimiento {
     display: flex;
     justify-content: space-between;
@@ -376,6 +378,10 @@ FORMULARIO DEPORTISTA
     margin-bottom: 1rem;
 }
 
+#premios option:selected {
+    background-color: #bb0b0b;
+    color: white;
+}
 
 input[type="checkbox"] {
     width: 20px;
