@@ -283,6 +283,23 @@ SECCIONES PÍKATE
 }
 
 /*----------------
+PIKADOS, CLUBES Y MARCAS
+----------------*/
+.list-title {
+    padding: 5px 40px;
+    color: white;
+}
+
+#clubes-list, #sponsors-list, #profiles-list {
+    list-style: none;
+    width: 80%;
+    margin-left: 10%;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+}
+
+/*----------------
 FOOTER
 ----------------*/
 footer {
