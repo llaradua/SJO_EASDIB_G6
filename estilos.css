@@ -155,6 +155,92 @@ SECCIONES HOME
     transition: transform 0.1s; 
 }
 
+.contenedor_home .píkate::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('img/recorrido.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3; 
+    z-index: -1;  
+}
+
+
+.contenedor_home .píkate {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.contenedor_home .pikados::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('img/amigos_de_tiro_completo_en_la_arena.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3; 
+    z-index: -1;  
+}
+
+
+.contenedor_home .pikados {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.contenedor_home .clubes::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('img/club.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3; 
+    z-index: -1;  
+}
+
+
+.contenedor_home .clubes {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.contenedor_home .marcas::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('img/mano.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3; 
+    z-index: -1;  
+}
+
+
+.contenedor_home .marcas {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
 /* color al pulsar sobre cada sección */
 .contenedor_home a:hover .pikados { background-color: rgba(237, 164, 255, 0.9); }
 .contenedor_home a:hover .píkate { background-color: rgba(167, 201, 145, 0.9); }
@@ -269,6 +355,41 @@ SECCIONES PÍKATE
     border: 1px solid rgba(255, 255, 255, 0.2);
     
     transition: 0.3s ease;
+    position: relative; 
+    overflow: hidden;    
+    z-index: 1;
+}
+
+/* Configuración común para las fotos de los tres botones */
+.deportista::before, .club::before, .patrocinador::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4; /* Nivel de "disuelto" */
+    z-index: -1;  /* Detrás del texto */
+    transition: opacity 0.3s ease;
+}
+
+/* Imagen para DEPORTISTA */
+.deportista::before {
+    background-image: url('img/muscular_men_jogging_outdoors_sports_clothing_generated_by_ai.jpg');
+}
+
+/* Imagen para CLUB */
+.club::before {
+    background-image: url('img/estadio_de_futbol_lleno_de_gente\ \(1\).jpg');
+}
+
+/* Imagen para SPONSOR */
+.patrocinador::before {
+    background-image: url('img/sponsor.jpg');
+}
+
+/* Efecto hover: la foto se aclara al pasar el ratón */
+.deportista_o_marca a:hover section::before {
+    opacity: 0.8;
 }
 
 /* 4. Interacción (Hover y Active) */
