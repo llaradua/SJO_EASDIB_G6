@@ -57,14 +57,18 @@
                 <input type="text" id="nombre" placeholder="Nombre del club" required>
 
                <select id="disciplina" required>
-                <option value="">Seleccione Disciplina...</option>
-                <option value="Atletismo">Atletismo</option>
-                <option value="DeportesEquipo">Deportes de Equipo</option>
-    </select>
-
-<select id="deporte" required>
-    <option value="">Seleccione Deporte...</option>
-</select>
+                    <option value="">Seleccione Disciplina...</option>
+                    <option value="ArtesMarciales">Artes marciales</option>
+                    <option value="Atletismo">Atletismo</option>
+                    <option value="Automovilismo">Automovilismo</option>
+                    <option value="Deportes acuáticos">Deportes acuáticos</option>
+                    <option value="Deportes de equipo">Deportes de equipo</option>
+                    <option value="Deportes de fuerza">Deportes de fuerza</option>
+                    <option value="Deportes de invierno">Deportes de invierno</option>
+                    <option value="Deportes de precisión">Deportes de precisión</option>
+                    <option value="Deportes de raqueta">Deportes de raqueta</option>
+                    <option value="Gimnasia">Gimnasia</option>
+                </select>
 
 <textarea id="descripcion" style="display:none"></textarea>
 
@@ -84,13 +88,12 @@
                 <input type="file" id="files" name="files">
 
                 <div class="botones_accion">
-                <input id="upload-button" type="submit" value="Enviar">
+                <input id="upload-button" type="submit" value="ENVIAR">
                 <button type="button" id="cancel-edit" style="display:none;">Cancelar Edición</button>
             </div>
             </form>
 
         </div>
-        <h2>Lista</h2>
         <ul id="clubes-list">
             <li class="pet-item"></li>
         </ul>

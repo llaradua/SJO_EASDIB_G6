@@ -330,8 +330,14 @@ p#firma {
 /*----------------
 FORMULARIO DEPORTISTA
 ----------------*/
-.formulario_deportista {
+form {
     background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+.formulario_deportista {
     color:black;
     justify-content: center;
     margin:50px 10%;
@@ -396,11 +402,6 @@ FORMULARIO DEPORTISTA
     margin-bottom: 1rem;
 }
 
-#premios option:selected {
-    background-color: #bb0b0b;
-    color: white;
-}
-
 input[type="checkbox"] {
     width: 20px;
     margin: 0;
@@ -415,6 +416,21 @@ input[type="checkbox"] {
     border-radius: 5px;
     margin-top:30px;
     margin-bottom: 100px;
+    background: linear-gradient(135deg, #4a0404 0%, #1a0202 100%);
+    border: 1px solid #630505; 
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.formulario_deportista input[type="submit"]:hover {
+    background: linear-gradient(135deg, #6b0606 0%, #2b0303 100%);
+    transform: translateY(-5px) scale(1.03); 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    border-color: #ff3333; 
+}
+
+.formulario_deportista input[type="submit"]:active {
+    transform: translateY(-2px) scale(0.98);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 /*----------------
@@ -459,12 +475,12 @@ DEFINICIÓN DE MEDIDAS
     SECCIONES HOME
     ----------------*/
     .contenedor_home h2 {
-        margin-left: 60px;
+        margin-left: 80px;
         font-size: 2.3rem;
     }
     .contenedor_home p {
         font-size: 1.5rem;
-        margin: 90px 60px 20px 350px;
+        margin: 50px 80px;
         align-items: bottom;
     }
 
