@@ -269,6 +269,7 @@ SECCIONES HOME
 CTA "PÍKATE"
 ----------------*/
 #píkate {
+    z-index:100;
     position: sticky;
     bottom: 50px;
     display: flex;
