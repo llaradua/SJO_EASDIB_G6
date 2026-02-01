@@ -54,7 +54,7 @@ MENÚ HAMBURGUESA DESPLEGABLE
     display: block;
     width: 100%;
     padding: 20px 0px;
-    background-color:rg#B11D29;
+    background-color:rgb#B11D29;
     color: white;
 }
 
@@ -501,7 +501,7 @@ form {
     font-size: 1rem;
     color: #333;
     outline: none;
-    border-radius: 15; 
+    border-radius: 15px; 
     -webkit-appearance: none; 
     appearance: none;
  
@@ -602,7 +602,7 @@ DEFINICIÓN DE MEDIDAS
     .contenedor_home p {
         font-size: 1.5rem;
         margin: 50px 80px;
-        align-items: bottom;
+        align-items: baseline;
     }
 
     /*----------------
